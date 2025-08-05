@@ -166,14 +166,61 @@ class Report(models.Model):
 
 
 class CMSPage(models.Model):
-    slug = models.SlugField(unique=True)
-    title = models.CharField(max_length=255)
-    body = models.TextField()
-    published = models.BooleanField(default=True)
+    slug = models.SlugField(unique=True, help_text="URL-friendly identifier for the page")
+    title = models.CharField(max_length=255, help_text="Page title")
+    body = models.TextField(help_text="Page content")
+    published = models.BooleanField(default=False, help_text="Whether the page is publicly visible")
+    
+    # Author tracking
+    author = models.ForeignKey(
+        User, 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True,
+        related_name='authored_cms_pages',
+        help_text="User who created this page"
+    )
+    last_modified_by = models.ForeignKey(
+        User, 
+        on_delete=models.SET_NULL, 
+        null=True, 
+        blank=True,
+        related_name='modified_cms_pages',
+        help_text="User who last modified this page"
+    )
+    
+    # Metadata
+    meta_description = models.CharField(
+        max_length=160, 
+        blank=True, 
+        help_text="SEO meta description"
+    )
+    meta_keywords = models.CharField(
+        max_length=255, 
+        blank=True, 
+        help_text="SEO meta keywords (comma-separated)"
+    )
+    
+    # Timestamps
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    published_at = models.DateTimeField(null=True, blank=True, help_text="When the page was first published")
 
     class Meta:
         ordering = ['-created_at']
+        permissions = [
+            ("publish_cmspage", "Can publish/unpublish CMS pages"),
+            ("manage_all_cmspages", "Can manage all CMS pages regardless of author"),
+        ]
+    
+    def __str__(self):
+        return f"{self.title} ({self.slug})"
+    
+    def save(self, *args, **kwargs):
+        # Set published_at when first published
+        if self.published and not self.published_at:
+            from django.utils import timezone
+            self.published_at = timezone.now()
+        super().save(*args, **kwargs)
 
 

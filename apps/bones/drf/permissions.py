@@ -78,3 +78,97 @@ class HasPermissions(BasePermission):
             elif not is_or and not has_perm:
                 return False
         return True if 0 == i else not is_or
+
+
+# CMS-specific permission classes
+class CMSPermission(CRUDPermission):
+    """
+    Base CMS permission class that uses Django's built-in permission system
+    for CMS content management.
+    """
+    syntax = "core.%s_cmspage"
+
+
+class CMSContentManager(BasePermission):
+    """
+    Permission class for CMS content managers.
+    Allows content managers to create, read, and update CMS pages but not delete them.
+    """
+    def has_permission(self, req: Request, view: APIView) -> bool:
+        if not req.user or not req.user.is_authenticated:
+            return False
+        
+        # Allow read access to all authenticated users
+        if req.method == "GET":
+            return True
+        
+        # Allow content managers to create and update
+        if req.method in ["POST", "PUT", "PATCH"]:
+            return (req.user.is_staff or 
+                   req.user.has_perm("core.add_cmspage") or 
+                   req.user.has_perm("core.change_cmspage"))
+        
+        # Only superusers can delete
+        if req.method == "DELETE":
+            return req.user.is_superuser
+        
+        return False
+
+
+class CMSEditor(BasePermission):
+    """
+    Permission class for CMS editors.
+    Allows editors to read and update existing CMS pages but not create or delete them.
+    """
+    def has_permission(self, req: Request, view: APIView) -> bool:
+        if not req.user or not req.user.is_authenticated:
+            return False
+        
+        # Allow read access
+        if req.method == "GET":
+            return True
+        
+        # Allow editors to update existing content
+        if req.method in ["PUT", "PATCH"]:
+            return (req.user.is_staff or 
+                   req.user.has_perm("core.change_cmspage"))
+        
+        # Only content managers and above can create
+        if req.method == "POST":
+            return (req.user.is_superuser or 
+                   req.user.has_perm("core.add_cmspage"))
+        
+        # Only superusers can delete
+        if req.method == "DELETE":
+            return req.user.is_superuser
+        
+        return False
+
+
+class CMSPublisher(BasePermission):
+    """
+    Permission class for publishing/unpublishing CMS content.
+    Only allows users with specific publish permissions to change the published status.
+    """
+    def has_permission(self, req: Request, view: APIView) -> bool:
+        if not req.user or not req.user.is_authenticated:
+            return False
+        
+        # Check if user is trying to modify published status
+        if req.method in ["PUT", "PATCH", "POST"]:
+            # This will be further validated in the view/serializer
+            return (req.user.is_staff or 
+                   req.user.has_perm("core.change_cmspage") or
+                   req.user.has_perm("core.add_cmspage"))
+        
+        return True
+
+
+class CMSViewOnly(BasePermission):
+    """
+    Permission class for read-only access to CMS content.
+    """
+    def has_permission(self, req: Request, view: APIView) -> bool:
+        if req.method == "GET":
+            return req.user and req.user.is_authenticated
+        return False
