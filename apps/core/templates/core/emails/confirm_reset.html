@@ -1,0 +1,23 @@
+{% extends "core/layout/email_message.html" %}
+{% load static i18n %}
+
+{% block title %}{% translate "Password Reset" %}{% endblock title %}
+
+{% block content %}
+<div class="text-center">
+    <div class="content-heading">
+        <img src="{{ BASE_URL }}{% static 'spa/logo/02.png' %}" style="width:75px; height:auto;" />
+        {% translate "Password Reset Request" %}
+    </div>
+    <div class="content-body">
+        <p>{% translate "A request to reset your password was issued on the EAC restrictions portal. Use the link below to reset your password." %}</p>
+        <p>{% translate "Please note, unless you use the link below to reset your password, your current password will not change." %}</p>
+    </div>
+</div>
+{% endblock content %}
+
+{% block actions %}
+<a target="_blank" href="{{ BASE_URL }}{% url 'spa:auth' 'register/confirm' %}/{{ profile.activation_code }}" class="action-link">
+    &nbsp;{% translate "Confirm" %} &nbsp;
+</a>
+{% endblock actions %}

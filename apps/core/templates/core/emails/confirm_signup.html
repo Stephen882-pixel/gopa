@@ -1,0 +1,25 @@
+{% extends "core/layout/email_message.html" %}
+{% load static i18n %}
+
+{% block title %}{% translate "User Registration" %}{% endblock title %}
+
+{% block content %}
+<div class="text-center">
+    <div class="content-heading">
+        <img src="{{ BASE_URL }}{% static 'spa/logo/02.png' %}" style="width:75px; height:auto;" />{% if profile.user.is_staff %}
+        {% translate "Welcome to the EAC Restrictions Portal!" %}{% else %}
+        {% translate "Thank you for signing up!" %}{% endif %}
+    </div>
+    <div class="content-body">{% if profile.user.is_staff %}
+        <p>{% translate "You have been invited to the EAC restrictions portal. Please confirm your registration to activate your staff account." %}</p>{% else %}
+        <p><b style="color: #777777;">{% translate "We are excited to have you join us" %}</b></p>
+        <p>{% translate "Please confirm your registration to continue" %}</p>{% endif %}
+    </div>
+</div>
+{% endblock content %}
+
+{% block actions %}
+<a target="_blank" href="{{ BASE_URL }}{% url 'spa:auth' 'register/confirm' %}/{{ profile.activation_code }}" class="action-link">
+    &nbsp;{% translate "Confirm" %} &nbsp;
+</a>
+{% endblock actions %}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>{% spaceless %}
+        {% load static core_template_tags i18n %}
+        {% csp_enable "style-src" "'unsafe-inline'" %}
+        {% csp_enable "img-src" "data:" %}
+        {% if REPORT_URL %}{% csp_enable "child-src" "'self'" REPORT_URL %}{% endif %}
+        {% if DEBUG_MODE %}{% csp_enable "script-src" "'unsafe-eval'" %}{% endif %}
+        {% endspaceless %}
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="The EAC Mechanism for the Removal of Restrictions in Trade in Services" />
+        <title>EAC Home</title>
+        <link rel="icon" href="{% static 'spa/logo/02.png' %}" />
+        <link rel="apple-touch-icon" href="{% static 'spa/logo-02.png' %}" />
+    </head>
+    <body>
+        <noscript>{% trans 'You need to enable JavaScript to run this app' %}</noscript>
+        <div id="react-base" data-state="{{ state }}"></div>
+        <script src="{% static 'spa/dist/bundle.js' %}" type="text/javascript"></script>
+    </body>
+</html>

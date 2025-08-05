@@ -1,0 +1,1505 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=utf-8\n"
+"Plural-Forms: nplurals = 2; plural = (n != 1);\n"
+"Language: en_GB\n"
+"MIME-Version: 1.0\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/app/hooks/fetch.ts:54
+msgid "API Error"
+msgstr ""
+
+#: src/app/hooks/fetch.ts:55
+msgid "An error occurred while fetching your request. Please try again later."
+msgstr ""
+
+#: src/app/utils.ts:12
+msgid "An error occurred while processing your request. Please try again later."
+msgstr ""
+
+#: src/app/utils.ts:15
+msgid "Error"
+msgstr ""
+
+#: src/app/utils.ts:23
+#: src/pages/auth/Register/Client.tsx:31
+#: src/pages/auth/Register/Reset.tsx:31
+msgid "Success"
+msgstr ""
+
+#: src/app/utils.ts:24
+msgid "Your details were successfully saved"
+msgstr ""
+
+#: src/app/utils.ts:131
+#: src/app/utils.ts:149
+msgid "Ok"
+msgstr ""
+
+#: src/app/utils.ts:148
+#: src/pages/config/Reports/FeatureDialog.tsx:60
+msgid "Cancel"
+msgstr ""
+
+#: src/components/layout/filter/CountryFilter.tsx:61
+#: src/components/layout/filter/CountryFilter.tsx:78
+#: src/template/pages/home/Hero.tsx:167
+#: src/template/pages/restrictions/BrowseSearch.tsx:75
+msgid "All Countries"
+msgstr ""
+
+#: src/template/pages/about/AboutUs.tsx:32
+#: src/template/pages/about/AboutUs.tsx:48
+msgid "About Us"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:23
+#: src/pages/manage/Complaints/List.tsx:34
+#: src/template/components/MenuBar/MenuBar.tsx:113
+#: src/template/pages/complaints/Complaints.tsx:59
+#: src/template/pages/home/Hero.tsx:155
+#: src/template/pages/restrictions/Restriction.tsx:299
+msgid "Complaints"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:138
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:87
+#: src/template/pages/complaints/Complaints.tsx:196
+#: src/template/pages/complaints/Complaints.tsx:244
+#: src/template/pages/restrictions/Restriction.tsx:183
+msgid "Type Of Restriction"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:138
+msgid "Details Of Occurrence"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:88
+#: src/template/pages/complaints/Complaints.tsx:168
+msgid "Date Of Occurrence"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:126
+msgid "Country Of Occurrence"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:292
+msgid "Brief Description"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:299
+msgid "Trade Barrier/Incident"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:300
+msgid "A brief description of the trade barrier or incident"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:321
+#: src/template/pages/complaints/Complaints.tsx:322
+msgid "Submit"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:24
+#: src/pages/manage/Notifications.tsx:123
+#: src/template/components/MenuBar/MenuBar.tsx:119
+#: src/template/pages/Notifications.tsx:27
+#: src/template/pages/Notifications.tsx:38
+msgid "Notifications"
+msgstr ""
+
+#: src/template/pages/Notifications.tsx:41
+msgid "Notifications of requirements under the Services Directive"
+msgstr ""
+
+#: src/template/pages/Publication.tsx:24
+msgid "View Publication"
+msgstr ""
+
+#: src/template/pages/Publication.tsx:45
+msgid "publication image"
+msgstr ""
+
+#: src/pages/manage/Commitments/Edit.tsx:63
+#: src/pages/manage/Commitments/Edit.tsx:64
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:59
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:60
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:82
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:83
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:104
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:105
+#: src/template/pages/Publication.tsx:59
+#: src/template/pages/Publication.tsx:63
+#: src/template/pages/indicators/Indicator.tsx:46
+#: src/template/pages/indicators/Indicator.tsx:49
+#: src/template/pages/indicators/Indicator.tsx:75
+#: src/template/pages/indicators/Indicator.tsx:78
+#: src/template/pages/restrictions/Restriction.tsx:110
+msgid "Back"
+msgstr ""
+
+#: src/template/pages/Publication.tsx:69
+#: src/template/pages/Publication.tsx:72
+msgid "Download PDF"
+msgstr ""
+
+#: src/template/pages/restrictions/Browse.tsx:68
+msgid "Browse Restrictions"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:25
+#: src/pages/manage/Restrictions/List.tsx:36
+#: src/template/components/MenuBar/MenuBar.tsx:111
+#: src/template/pages/home/Hero.tsx:154
+#: src/template/pages/home/Restrictions.tsx:37
+#: src/template/pages/restrictions/Browse.tsx:97
+msgid "Restrictions"
+msgstr ""
+
+#: src/components/container/PTable/PTable.tsx:177
+#: src/template/pages/indicators/Browse.tsx:63
+#: src/template/pages/restrictions/Browse.tsx:177
+msgid "No Data Available"
+msgstr ""
+
+#: src/template/pages/restrictions/Restriction.tsx:45
+msgid "View Restriction"
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:115
+#: src/template/components/MenuBar/MenuBar.tsx:162
+#: src/template/components/MenuBar/MenuBar.tsx:222
+#: src/template/pages/complaints/Complaints.tsx:91
+#: src/template/pages/restrictions/Restriction.tsx:116
+#: src/template/pages/restrictions/Restriction.tsx:119
+msgid "Register Complaint"
+msgstr ""
+
+#: src/template/pages/restrictions/Restriction.tsx:135
+msgid "Text Of Measure"
+msgstr ""
+
+#: src/pages/config/Reports/ReportForm.tsx:98
+#: src/pages/config/Reports/index.tsx:79
+#: src/pages/manage/Commitments/Edit.tsx:53
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:63
+#: src/pages/manage/Restrictions/List.tsx:85
+#: src/template/pages/indicators/Indicator.tsx:61
+#: src/template/pages/restrictions/Restriction.tsx:160
+msgid "Brief"
+msgstr ""
+
+#: src/components/SectorSelector.tsx:114
+#: src/pages/manage/Commitments/CommitmentLineForm.tsx:49
+#: src/pages/manage/Commitments/Edit.tsx:105
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:104
+#: src/pages/manage/Complaints/List.tsx:89
+#: src/pages/manage/Notifications.tsx:33
+#: src/pages/manage/Notifications.tsx:152
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:24
+#: src/pages/manage/Restrictions/List.tsx:91
+#: src/template/pages/Notifications.tsx:66
+#: src/template/pages/complaints/Complaints.tsx:187
+#: src/template/pages/complaints/List.tsx:137
+#: src/template/pages/restrictions/Restriction.tsx:165
+msgid "Sector"
+msgstr ""
+
+#: src/pages/manage/Commitments/CommitmentLineForm.tsx:37
+#: src/pages/manage/Commitments/Edit.tsx:99
+#: src/pages/manage/Notifications.tsx:43
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:35
+#: src/pages/manage/Restrictions/List.tsx:97
+#: src/template/pages/about/SMSHowTo.tsx:61
+#: src/template/pages/restrictions/Restriction.tsx:173
+msgid "Country"
+msgstr ""
+
+#: src/template/pages/restrictions/Restriction.tsx:39
+#: src/template/pages/restrictions/Restriction.tsx:41
+#: src/template/pages/restrictions/Restriction.tsx:194
+#: src/template/pages/restrictions/Restriction.tsx:230
+#: src/template/pages/restrictions/Restriction.tsx:283
+#: src/template/pages/restrictions/Restriction.tsx:291
+msgid "Not Defined"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:112
+#: src/template/pages/restrictions/Restriction.tsx:191
+msgid "Restriction On Market Access"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:124
+#: src/template/pages/restrictions/Restriction.tsx:201
+msgid "Restriction On National Treatment"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:137
+#: src/template/pages/restrictions/Restriction.tsx:209
+msgid "Type Of Non-Compliance"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:150
+#: src/template/pages/restrictions/Restriction.tsx:219
+msgid "Mode Of Supply Affected"
+msgstr ""
+
+#: src/template/pages/restrictions/Restriction.tsx:227
+msgid "Restrictiveness Numerical Indicator"
+msgstr ""
+
+#: src/template/pages/restrictions/Restriction.tsx:249
+msgid "Responsible Ministry/Agency"
+msgstr ""
+
+#: src/pages/manage/Commitments/Edit.tsx:79
+#: src/template/pages/restrictions/Restriction.tsx:262
+msgid "Commitments Made"
+msgstr ""
+
+#: src/template/pages/restrictions/Restriction.tsx:275
+msgid "Other Dates"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:213
+#: src/template/pages/restrictions/Restriction.tsx:280
+msgid "Proposed Year Of Removal Of The Restriction By The Partner State"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:224
+#: src/template/pages/restrictions/Restriction.tsx:288
+msgid "Year Measure Was Removed Or Amended"
+msgstr ""
+
+#: src/template/pages/restrictions/Restriction.tsx:304
+msgid "None"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:249
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:90
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:123
+#: src/template/pages/restrictions/Restriction.tsx:325
+msgid "Remarks"
+msgstr ""
+
+#: src/template/pages/restrictions/Restriction.tsx:312
+msgid "Update by Partner State"
+msgstr ""
+
+#: src/template/pages/indicators/Browse.tsx:39
+#: src/template/pages/indicators/Browse.tsx:49
+msgid "Indicators"
+msgstr ""
+
+#: src/pages/config/Policy.tsx:68
+#: src/pages/config/Policy.tsx:112
+#: src/pages/config/Reports/ReportForm.tsx:110
+#: src/pages/config/RestrictionAccess.tsx:52
+#: src/pages/config/RestrictionAccess.tsx:89
+#: src/pages/config/Sectors.tsx:78
+#: src/pages/manage/Commitments/CommitmentForm.tsx:25
+#: src/pages/manage/Commitments/List.tsx:58
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:184
+#: src/template/pages/indicators/Indicator.tsx:65
+msgid "Description"
+msgstr ""
+
+#: src/template/pages/home/AboutUs.tsx:50
+#: src/template/pages/home/AboutUs.tsx:65
+#: src/template/pages/home/AboutUs.tsx:80
+msgid "Read More"
+msgstr ""
+
+#: src/pages/config/Reports/FeatureDialog.tsx:43
+#: src/pages/config/Reports/index.tsx:53
+#: src/pages/config/Reports/index.tsx:54
+msgid "Featured Insight"
+msgstr ""
+
+#: src/template/pages/home/DataInsight.tsx:70
+msgid "Explore all insights"
+msgstr ""
+
+#: src/template/pages/home/Home.tsx:18
+msgid "EAC Home"
+msgstr ""
+
+#: src/template/pages/home/Publications.tsx:38
+msgid "Publications"
+msgstr ""
+
+#: src/template/pages/home/Publications.tsx:41
+msgid "A sample list of publications that have been made available on this portal"
+msgstr ""
+
+#: src/components/container/PTable/PTableToolBar.tsx:42
+#: src/template/components/Cards/SearchCard.tsx:77
+#: src/template/components/Cards/SearchCard.tsx:78
+#: src/template/components/Cards/SearchCard.tsx:90
+#: src/template/components/Cards/SearchCard.tsx:95
+#: src/template/components/SearchBox.tsx:32
+#: src/template/pages/home/Hero.tsx:200
+#: src/template/pages/restrictions/BrowseSearch.tsx:81
+#: src/template/pages/restrictions/BrowseSearch.tsx:82
+msgid "Search"
+msgstr ""
+
+#: src/template/components/SearchBox.tsx:33
+msgid "search"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:107
+#: src/pages/auth/Login.tsx:108
+#: src/pages/auth/Register/Confirm.tsx:88
+#: src/pages/auth/Register/Confirm.tsx:89
+#: src/pages/error/Page403.tsx:16
+#: src/pages/error/Page403.tsx:17
+#: src/pages/error/Page404.tsx:27
+#: src/pages/error/Page404.tsx:28
+#: src/template/components/MenuBar/MenuBar.tsx:102
+msgid "Home"
+msgstr ""
+
+#: src/components/layout/panel/AppBarPanel.tsx:74
+#: src/components/layout/panel/SidePanel.tsx:61
+#: src/pages/auth/Login.tsx:40
+#: src/pages/auth/Register/Client.tsx:41
+#: src/pages/auth/Register/Confirm.tsx:45
+#: src/pages/auth/Register/Reset.tsx:41
+#: src/template/components/MenuBar/MenuBar.tsx:144
+#: src/template/components/MenuBar/MenuBar.tsx:202
+msgid "EAC logo"
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:145
+msgid "EU-EAC core logo"
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:146
+msgid "EU funded by logo"
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:175
+#: src/template/components/MenuBar/MenuBar.tsx:176
+msgid "Menu"
+msgstr ""
+
+#: src/template/components/MenuBar/UserMenuItem.tsx:35
+msgid "Login"
+msgstr ""
+
+#: src/template/components/MenuBar/UserMenuItem.tsx:45
+msgid "Profile user name"
+msgstr ""
+
+#: src/components/layout/menu/OptionsMenu.tsx:83
+#: src/template/components/MenuBar/UserMenuItem.tsx:61
+msgid "Profile"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:17
+#: src/pages/error/PageConstruction.tsx:16
+#: src/pages/error/PageConstruction.tsx:17
+#: src/template/components/MenuBar/UserMenuItem.tsx:68
+msgid "Dashboard"
+msgstr ""
+
+#: src/components/layout/menu/OptionsMenu.tsx:98
+#: src/components/layout/panel/AppBarPanel.tsx:121
+#: src/components/layout/panel/AppBarPanel.tsx:125
+#: src/template/components/MenuBar/UserMenuItem.tsx:80
+msgid "Logout"
+msgstr ""
+
+#: src/template/components/Cards/SearchCard.tsx:83
+#: src/template/pages/restrictions/BrowseSearch.tsx:87
+msgid "Search for a restriction"
+msgstr ""
+
+#: src/pages/error/Page403.tsx:11
+msgid "Access Denied!"
+msgstr ""
+
+#: src/app/hooks/fetch.ts:122
+#: src/pages/error/Page403.tsx:12
+msgid "You do not have access to the specified resource."
+msgstr ""
+
+#: src/pages/error/Page404.tsx:14
+msgid "You're lost."
+msgstr ""
+
+#: src/pages/error/Page404.tsx:15
+msgid "The page you are looking for could not be found"
+msgstr ""
+
+#: src/pages/error/Page404.tsx:19
+#: src/pages/error/Page404.tsx:20
+msgid "Go Back"
+msgstr ""
+
+#: src/pages/error/PageConstruction.tsx:11
+msgid "Under Construction"
+msgstr ""
+
+#: src/pages/error/PageConstruction.tsx:12
+msgid "This section is still under development, please try again later."
+msgstr ""
+
+#: src/pages/auth/Groups/GroupForm.tsx:83
+#: src/pages/config/Policy.tsx:27
+#: src/pages/config/Policy.tsx:106
+#: src/pages/config/ReportTags.tsx:26
+#: src/pages/config/ReportTags.tsx:78
+#: src/pages/config/Reports/ReportForm.tsx:27
+#: src/pages/config/Reports/index.tsx:62
+#: src/pages/config/RestrictionAccess.tsx:27
+#: src/pages/config/RestrictionAccess.tsx:83
+#: src/pages/config/Sectors.tsx:69
+#: src/pages/manage/Commitments/CommitmentForm.tsx:14
+#: src/pages/manage/Commitments/List.tsx:52
+msgid "Label"
+msgstr ""
+
+#: src/pages/config/Policy.tsx:44
+#: src/pages/config/ReportTags.tsx:41
+#: src/pages/config/RestrictionAccess.tsx:43
+msgid "Slug"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:36
+#: src/pages/config/RestrictionAccess.tsx:68
+msgid "Restriction Access"
+msgstr ""
+
+#: src/pages/config/Policy.tsx:86
+#: src/pages/config/RestrictionAccess.tsx:69
+#: src/pages/manage/Complaints/List.tsx:35
+#: src/pages/manage/Notifications.tsx:124
+#: src/pages/manage/Restrictions/List.tsx:37
+msgid "a brief description"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:74
+#: src/template/pages/restrictions/Restriction.tsx:237
+msgid "Type Of Measure"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:178
+msgid "Ministry/Agency Responsible For The Removal of The Restriction"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:202
+msgid "Year Measure Was Introduced"
+msgstr ""
+
+#: src/pages/manage/Restrictions/List.tsx:110
+msgid "Restriction Type"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:35
+#: src/pages/config/Sectors.tsx:96
+#: src/pages/manage/Complaints/List.tsx:54
+#: src/template/pages/complaints/List.tsx:102
+msgid "Sectors"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:41
+#: src/pages/auth/Login.tsx:84
+#: src/pages/auth/Login.tsx:86
+#: src/pages/auth/Register/Client.tsx:95
+#: src/pages/auth/Register/Reset.tsx:70
+msgid "Sign In"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:41
+#: src/pages/dashboard/Dashboard.tsx:8
+msgid "Welcome"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:56
+msgid "Password"
+msgstr ""
+
+#: src/components/Image.tsx:62
+msgid "Empty"
+msgstr ""
+
+#: src/components/layout/menu/OptionsMenu.tsx:63
+#: src/components/layout/panel/AppBarPanel.tsx:78
+msgid "Open Menu"
+msgstr ""
+
+#: src/components/layout/menu/OptionsMenu.tsx:86
+msgid "Portal"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:30
+msgid "Configure"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:43
+msgid "Admin"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:48
+#: src/pages/auth/Users.tsx:103
+msgid "Users"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:49
+#: src/pages/auth/Groups/index.tsx:27
+#: src/pages/auth/Users.tsx:49
+#: src/pages/auth/Users.tsx:152
+msgid "Groups"
+msgstr ""
+
+#: src/components/container/PCarousel.tsx:166
+msgid "Previous"
+msgstr ""
+
+#: src/components/container/PCarousel.tsx:169
+msgid "Next"
+msgstr ""
+
+#: src/components/container/PGrid.tsx:96
+#: src/components/container/PGrid.tsx:97
+#: src/components/container/PView.tsx:54
+#: src/components/container/PView.tsx:55
+#: src/components/container/PViewDialog.tsx:44
+#: src/components/container/PViewDialog.tsx:45
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:93
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:96
+msgid "Refresh"
+msgstr ""
+
+#: src/components/container/PGrid.tsx:102
+#: src/components/container/PGrid.tsx:103
+msgid "New Record"
+msgstr ""
+
+#: src/components/container/PGrid.tsx:147
+msgid "Save"
+msgstr ""
+
+#: src/components/container/PGrid.tsx:151
+#: src/components/container/PViewDialog.tsx:92
+#: src/components/container/box/DrawerBox.tsx:84
+#: src/components/container/box/DrawerBox.tsx:85
+#: src/template/pages/complaints/List.tsx:172
+msgid "Close"
+msgstr ""
+
+#: src/components/container/PTable/PTable.tsx:86
+msgid "Are you sure you would like to delete the specified record?"
+msgstr ""
+
+#: src/components/container/PTable/PTable.tsx:89
+msgid "Your record was successfully purged from the system."
+msgstr ""
+
+#: src/components/container/PTable/PTable.tsx:132
+msgid "Actions"
+msgstr ""
+
+#: src/components/container/PTable/PTableAction.tsx:23
+#: src/components/container/PTable/PTableAction.tsx:24
+#: src/components/container/PViewDialog.tsx:68
+#: src/components/container/PViewDialog.tsx:69
+#: src/pages/manage/Commitments/List.tsx:42
+#: src/pages/manage/Commitments/List.tsx:44
+#: src/pages/manage/Complaints/List.tsx:67
+#: src/pages/manage/Complaints/List.tsx:69
+#: src/pages/manage/Restrictions/List.tsx:74
+#: src/pages/manage/Restrictions/List.tsx:76
+#: src/template/pages/complaints/List.tsx:86
+#: src/template/pages/complaints/List.tsx:87
+msgid "Preview"
+msgstr ""
+
+#: src/components/container/PTable/PTableAction.tsx:30
+#: src/components/container/PTable/PTableAction.tsx:31
+#: src/pages/manage/Commitments/List.tsx:42
+#: src/pages/manage/Commitments/List.tsx:44
+#: src/pages/manage/Complaints/List.tsx:67
+#: src/pages/manage/Complaints/List.tsx:69
+#: src/pages/manage/Restrictions/List.tsx:74
+#: src/pages/manage/Restrictions/List.tsx:76
+msgid "Edit"
+msgstr ""
+
+#: src/components/container/PTable/PTableAction.tsx:19
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:73
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:82
+msgid "Delete"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:306
+msgid "Supporting Documentation"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:313
+msgid "The necessary documentation that will facilitate in looking into this complaint"
+msgstr ""
+
+#: src/template/pages/restrictions/Browse.tsx:117
+#: src/template/pages/restrictions/BrowseSearch.tsx:92
+#: src/template/pages/restrictions/BrowseSearch.tsx:95
+#: src/template/pages/restrictions/BrowseSearch.tsx:126
+msgid "Refine Your Selection"
+msgstr ""
+
+#: src/template/pages/restrictions/Browse.tsx:98
+msgid "Specified Sector"
+msgstr ""
+
+#: src/template/pages/restrictions/BrowseSearch.tsx:109
+#: src/template/pages/restrictions/BrowseSearch.tsx:114
+msgid "View All Sectors"
+msgstr ""
+
+#: src/template/pages/home/Restrictions.tsx:47
+#. const navigate = useNavigate();
+msgid "Explore All Sectors"
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:104
+#: src/template/components/MenuBar/MenuBar.tsx:106
+msgid "About"
+msgstr ""
+
+#: src/pages/config/Sectors.tsx:58
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:53
+#: src/template/pages/complaints/Complaints.tsx:107
+#: src/template/pages/complaints/Complaints.tsx:113
+msgid "Please Note"
+msgstr ""
+
+#: src/pages/config/Sectors.tsx:59
+msgid "Select a sector from the list of sectors availed."
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:105
+#: src/pages/config/Reports/FeatureDialog.tsx:61
+#: src/pages/config/Sectors.tsx:88
+#: src/pages/manage/Commitments/Edit.tsx:69
+#: src/pages/manage/Commitments/Edit.tsx:70
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:64
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:65
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:100
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:101
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:110
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:111
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:118
+msgid "Update"
+msgstr ""
+
+#: src/components/SectorSelector.tsx:178
+msgid "Choose a sector"
+msgstr ""
+
+#: src/components/layout/menu/UtilsMenu.tsx:42
+msgid "Support"
+msgstr ""
+
+#: src/components/layout/menu/UtilsMenu.tsx:43
+msgid "The locale provided is not supported at this time"
+msgstr ""
+
+#: src/components/input/Upload/PUpload/PUpload.tsx:100
+msgid "Upload Files"
+msgstr ""
+
+#: src/components/input/Upload/PUpload/PUpload.tsx:100
+msgid "Upload File"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:47
+#: src/pages/manage/Complaints/List.tsx:112
+#: src/pages/manage/Notifications.tsx:55
+#: src/pages/manage/Notifications.tsx:143
+#: src/pages/manage/Notifications.tsx:176
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:164
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:77
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:108
+#: src/template/pages/Notifications.tsx:57
+#: src/template/pages/Notifications.tsx:90
+#: src/template/pages/complaints/List.tsx:154
+msgid "Status"
+msgstr ""
+
+#: src/pages/manage/Notifications.tsx:82
+#: src/pages/manage/Notifications.tsx:158
+#: src/template/pages/Notifications.tsx:72
+msgid "Applicability"
+msgstr ""
+
+#: src/pages/manage/Notifications.tsx:94
+#: src/pages/manage/Notifications.tsx:164
+#: src/template/pages/Notifications.tsx:78
+msgid "Requirement"
+msgstr ""
+
+#: src/pages/manage/Notifications.tsx:66
+#: src/pages/manage/Notifications.tsx:182
+#: src/template/pages/Notifications.tsx:96
+msgid "Notification Date"
+msgstr ""
+
+#: src/template/pages/Notifications.tsx:102
+msgid "Reference"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:50
+#: src/template/pages/restrictions/Restriction.tsx:147
+msgid "Description Of Measure"
+msgstr ""
+
+#: src/template/pages/indicators/Indicator.tsx:22
+msgid "Indicator"
+msgstr ""
+
+#: src/components/container/PReport.tsx:65
+#: src/template/pages/home/DataInsight.tsx:56
+#: src/template/pages/indicators/Indicator.tsx:34
+msgid "The report could not be loaded at this time."
+msgstr ""
+
+#: src/template/pages/home/DataInsight.tsx:43
+msgid "Monitoring of Commitments & Restrictions"
+msgstr ""
+
+#: src/template/pages/home/Hero.tsx:183
+msgid "All Sectors"
+msgstr ""
+
+#: src/template/pages/home/Restrictions.tsx:41
+#. const navigate = useNavigate();
+msgid "Explore restrictions by sector in the EAC"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:114
+msgid "To register a complaint, you must log in as a registered user. If you do not have an account yet, please register an account first."
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:118
+#: src/template/pages/complaints/Complaints.tsx:121
+#: src/template/pages/complaints/Complaints.tsx:329
+#: src/template/pages/complaints/Complaints.tsx:332
+msgid "Log In"
+msgstr ""
+
+#: src/pages/auth/Register/Client.tsx:88
+#: src/pages/auth/Register/Client.tsx:90
+#: src/pages/auth/Register/Confirm.tsx:84
+#: src/pages/auth/Register/Confirm.tsx:86
+#: src/template/pages/complaints/Complaints.tsx:125
+#: src/template/pages/complaints/Complaints.tsx:128
+msgid "Register"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:114
+#: src/template/pages/complaints/Complaints.tsx:146
+#: src/template/pages/complaints/List.tsx:125
+msgid "Country Of Origin"
+msgstr ""
+
+#: src/pages/manage/Complaints/List.tsx:83
+#: src/template/pages/complaints/Complaints.tsx:157
+#: src/template/pages/complaints/List.tsx:131
+msgid "Destination Country"
+msgstr ""
+
+#: src/pages/config/Policy.tsx:85
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:150
+#: src/pages/manage/Complaints/List.tsx:95
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:100
+#: src/template/pages/complaints/Complaints.tsx:207
+#: src/template/pages/complaints/Complaints.tsx:256
+#: src/template/pages/complaints/List.tsx:143
+msgid "Policy"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:161
+#: src/template/pages/complaints/Complaints.tsx:217
+#: src/template/pages/complaints/Complaints.tsx:268
+msgid "Mode Of Restriction"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:78
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:47
+#: src/template/pages/complaints/Complaints.tsx:236
+msgid "Restriction"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:173
+#: src/template/pages/complaints/Complaints.tsx:283
+msgid "Agency"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:196
+#: src/pages/manage/Notifications.tsx:104
+#: src/template/pages/complaints/Complaints.tsx:312
+msgid "Documents"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:334
+msgid "You must log in to submit this form"
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:116
+#: src/template/pages/complaints/List.tsx:41
+#: src/template/pages/complaints/List.tsx:68
+msgid "Overview Of Complaints"
+msgstr ""
+
+#: src/template/pages/complaints/List.tsx:71
+msgid "the list of complaints made within the portal"
+msgstr ""
+
+#: src/pages/manage/Complaints/List.tsx:60
+#: src/template/pages/complaints/List.tsx:112
+msgid "My Complaints"
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:108
+#: src/template/pages/about/SMSHowTo.tsx:25
+#: src/template/pages/about/SMSHowTo.tsx:47
+msgid "SMS Service"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:27
+msgid "Please specify the country of operation"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:63
+msgid "This country has not yet activated/installed the SMS reporting functionality"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:72
+msgid "National Focal Point"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:84
+msgid "What to Include in Your SMS"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:85
+msgid "When sending your report, be sure to include the following details so we can assist you effectively:"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:88
+msgid "What is the problem?"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:92
+msgid "When did it happen?"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:96
+msgid "Where did it happen?"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:100
+msgid "Your Company/Trade Name"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:101
+msgid "So we know who to follow up with."
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:104
+msgid "Your contact info"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:105
+msgid "Include your phone number so our team can reach you if needed."
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:118
+msgid "What Happens After You Send the SMS?"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:120
+msgid "We log your case into our secure system."
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:121
+msgid "Our support team reviews it and may contact you for more information."
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:126
+msgid "We handle your information with care and confidentiality. By sharing your experience, you’re not just solving your problem—you’re helping improve trade for everyone."
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:107
+#: src/template/pages/about/SectorDisplay.tsx:79
+#: src/template/pages/about/SectorDisplay.tsx:101
+msgid "List Sectors"
+msgstr ""
+
+#: src/template/components/Footer.tsx:49
+msgid "Implemented by GOPA Worldwide Consultants GmbH"
+msgstr ""
+
+#: src/template/components/MenuBar/MenuBar.tsx:155
+#: src/template/components/MenuBar/MenuBar.tsx:217
+msgid "SMS Report"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:189
+msgid "Committed To Liberalise"
+msgstr ""
+
+#: src/pages/manage/Restrictions/List.tsx:62
+msgid "Active"
+msgstr ""
+
+#: src/pages/manage/Restrictions/List.tsx:63
+msgid "Archived"
+msgstr ""
+
+#: src/pages/manage/Restrictions/List.tsx:103
+msgid "Deleted On"
+msgstr ""
+
+#: src/pages/manage/Complaints/Edit.tsx:50
+msgid "Review Logs"
+msgstr ""
+
+#: src/pages/manage/Complaints/Edit.tsx:55
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:95
+msgid "ID"
+msgstr ""
+
+#: src/pages/manage/Complaints/Edit.tsx:62
+#: src/pages/manage/Complaints/Forms/LogForm.tsx:39
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:102
+msgid "Reviewer"
+msgstr ""
+
+#: src/pages/manage/Complaints/Edit.tsx:68
+#: src/pages/manage/Complaints/Forms/LogForm.tsx:17
+msgid "Stage"
+msgstr ""
+
+#: src/pages/manage/Complaints/Edit.tsx:78
+#: src/pages/manage/Complaints/Forms/LogForm.tsx:31
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:113
+msgid "Time Stamp"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/LogForm.tsx:48
+#: src/pages/manage/Complaints/Forms/ReviewForm.tsx:59
+msgid "Comments"
+msgstr ""
+
+#: src/pages/manage/Complaints/List.tsx:77
+msgid "Origin Country"
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:55
+msgid "Captured Details"
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:44
+msgid "The complaint has already been reviewed."
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:47
+msgid "Please wait for the review process to end."
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:71
+msgid "This task could not be processed at this time."
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:33
+#: src/pages/manage/Complaints/Forms/ReviewForm.tsx:43
+msgid "Date Resolved"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ReviewForm.tsx:30
+msgid "Set Status"
+msgstr ""
+
+#: src/pages/manage/Commitments/CommitmentLineForm.tsx:28
+msgid "Please Note!"
+msgstr ""
+
+#: src/pages/manage/Commitments/CommitmentLineForm.tsx:29
+msgid "Make sure that the country and sector fields make a unique set or edit the existing record."
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:26
+#: src/pages/manage/Commitments/List.tsx:27
+msgid "Commitments"
+msgstr ""
+
+#: src/pages/manage/Commitments/List.tsx:28
+msgid "the list of commitments made by the EAC community"
+msgstr ""
+
+#: src/pages/manage/Commitments/List.tsx:64
+msgid "Created On"
+msgstr ""
+
+#: src/pages/config/Policy.tsx:57
+#: src/pages/config/Policy.tsx:100
+msgid "Sequence"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:39
+#: src/pages/config/ReportTags.tsx:57
+msgid "Report Tags"
+msgstr ""
+
+#: src/pages/config/ReportTags.tsx:58
+msgid "A list of tags that will be used to identify the various reports"
+msgstr ""
+
+#: src/pages/config/Reports/FeatureDialog.tsx:47
+msgid "Specify the insights that will appear on the home page"
+msgstr ""
+
+#: src/pages/config/Reports/FeatureDialog.tsx:53
+msgid "Featured Insights"
+msgstr ""
+
+#: src/pages/config/Reports/ReportForm.tsx:38
+#: src/pages/config/Reports/index.tsx:85
+msgid "Tags"
+msgstr ""
+
+#: src/pages/config/Reports/ReportForm.tsx:50
+msgid "Report Display Type"
+msgstr ""
+
+#: src/pages/config/Reports/ReportForm.tsx:65
+#: src/pages/config/Reports/index.tsx:74
+msgid "Index"
+msgstr ""
+
+#: src/pages/config/Reports/ReportForm.tsx:76
+msgid "Display Height"
+msgstr ""
+
+#: src/pages/config/Reports/ReportForm.tsx:87
+msgid "Params"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:38
+#: src/pages/config/Reports/index.tsx:31
+msgid "Reports"
+msgstr ""
+
+#: src/pages/config/Reports/index.tsx:32
+msgid "A list of reports that displayed on the portal"
+msgstr ""
+
+#: src/pages/config/Reports/index.tsx:45
+#: src/pages/config/Reports/index.tsx:46
+msgid "Set Feature"
+msgstr ""
+
+#: src/pages/config/Reports/index.tsx:68
+msgid "Type"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:46
+#: src/pages/auth/Login.tsx:98
+#: src/pages/auth/Profile.tsx:61
+#: src/pages/auth/Register/Client.tsx:50
+#: src/pages/auth/Register/Confirm.tsx:58
+#: src/pages/auth/Register/Reset.tsx:51
+#: src/pages/auth/Users.tsx:36
+#: src/pages/auth/Users.tsx:129
+msgid "Email"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:89
+msgid "Forgot your password?"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:91
+#: src/pages/auth/Register/Reset.tsx:69
+msgid "Don't have an account?"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:91
+msgid "Sign Up"
+msgstr ""
+
+#: src/pages/auth/Login.tsx:118
+#: src/pages/auth/Register/Client.tsx:101
+#: src/pages/auth/Register/Reset.tsx:75
+msgid "Back to EAC homepage"
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:57
+msgid "Contact"
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:77
+msgid "Phone"
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:96
+#: src/pages/auth/Register/Client.tsx:62
+msgid "Country Of Residence"
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:108
+msgid "Settings"
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:115
+#: src/pages/auth/Register/Client.tsx:70
+#: src/pages/auth/Users.tsx:61
+msgid "First Name"
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:123
+#: src/pages/auth/Register/Client.tsx:77
+#: src/pages/auth/Users.tsx:72
+msgid "Last Name"
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:131
+msgid "Locale"
+msgstr ""
+
+#: src/pages/auth/Profile.tsx:144
+msgid "Avatar"
+msgstr ""
+
+#: src/pages/auth/Users.tsx:82
+#: src/pages/auth/Users.tsx:141
+msgid "Is Active"
+msgstr ""
+
+#: src/pages/auth/Users.tsx:104
+msgid "a list of users within the portal"
+msgstr ""
+
+#: src/pages/auth/Users.tsx:119
+msgid "Staff Account"
+msgstr ""
+
+#: src/pages/auth/Users.tsx:120
+msgid "Client Account"
+msgstr ""
+
+#: src/pages/auth/Users.tsx:135
+msgid "Last Login"
+msgstr ""
+
+#: src/pages/auth/Users.tsx:147
+msgid "Display Name"
+msgstr ""
+
+#: src/pages/auth/Register/Client.tsx:32
+msgid "The user account was successfully created. Head to your email account to finalise the registration process."
+msgstr ""
+
+#: src/pages/auth/Register/Client.tsx:42
+msgid "Client Registration"
+msgstr ""
+
+#: src/pages/auth/Register/Client.tsx:43
+msgid "Fill in the details below to register as a client on this portal"
+msgstr ""
+
+#: src/pages/auth/Register/Client.tsx:94
+msgid "Have an account?"
+msgstr ""
+
+#: src/pages/auth/Register/Confirm.tsx:48
+msgid "Complete Registration"
+msgstr ""
+
+#: src/pages/auth/Register/Confirm.tsx:49
+msgid "In order to complete the registration process, please key in your new password"
+msgstr ""
+
+#: src/pages/auth/Register/Confirm.tsx:52
+#: src/pages/auth/Register/Reset.tsx:42
+msgid "Password Reset"
+msgstr ""
+
+#: src/pages/auth/Register/Confirm.tsx:65
+msgid "New Password"
+msgstr ""
+
+#: src/pages/auth/Register/Confirm.tsx:73
+msgid "Confirm Password"
+msgstr ""
+
+#: src/pages/auth/Register/Confirm.tsx:86
+msgid "Reset Password"
+msgstr ""
+
+#: src/pages/auth/Register/Reset.tsx:32
+msgid "Head to your email account to get the password reset link."
+msgstr ""
+
+#: src/pages/auth/Register/Reset.tsx:43
+msgid "Please key in your registered email address to receive the reset password link."
+msgstr ""
+
+#: src/pages/auth/Register/Reset.tsx:63
+#: src/pages/auth/Register/Reset.tsx:65
+msgid "Reset"
+msgstr ""
+
+#: src/pages/auth/Register/Reset.tsx:69
+msgid "Sign Up Now"
+msgstr ""
+
+#: src/pages/auth/Register/Reset.tsx:70
+msgid "or"
+msgstr ""
+
+#: src/pages/auth/Register/Reset.tsx:70
+msgid "to access your account"
+msgstr ""
+
+#: src/pages/auth/Groups/index.tsx:28
+msgid "the list of permission groups within the portal"
+msgstr ""
+
+#: src/pages/auth/Groups/index.tsx:43
+msgid "Name"
+msgstr ""
+
+#: src/components/SectorSelector.tsx:131
+msgid "Sub Sector"
+msgstr ""
+
+#: src/components/SectorSelector.tsx:150
+msgid "Specific Service"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:19
+msgid "Manage"
+msgstr ""
+
+#: src/components/layout/menu/MainMenu/nav.tsx:37
+msgid "Policies"
+msgstr ""
+
+#: src/components/layout/filter/TableFilter.tsx:82
+msgid "Clear Filter"
+msgstr ""
+
+#: src/components/input/Upload/PImageInput.tsx:87
+#: src/components/input/Upload/PUpload/PUpload.tsx:112
+msgid "Invalid File"
+msgstr ""
+
+#: src/components/input/Upload/PImageInput.tsx:103
+msgid "Clear"
+msgstr ""
+
+#: src/components/input/Upload/utils.ts:25
+msgid "You can not upload this file as the file format is not allowed at this time"
+msgstr ""
+
+#: src/components/input/Upload/utils.ts:28
+#, javascript-format
+msgid "One can not upload files larger than ${ mbMax }MB"
+msgstr ""
+
+#: src/components/input/Upload/PUpload/PUpload.tsx:154
+#: src/components/input/Upload/PUpload/PUpload.tsx:155
+msgid "Trash"
+msgstr ""
+
+#: src/components/container/PForm.tsx:91
+msgid "Please attend to the errors highlighted on the form."
+msgstr ""
+
+#: src/app/hooks/fetch.ts:121
+msgid "Your session has expired. Please log into the portal."
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:53
+msgid "Update Details"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:57
+msgid "This restriction has been archived."
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:239
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:68
+msgid "Update by Partner State / EAC"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:69
+msgid "The main resolution that resulted in updating this restriction"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/RestrictionPanel.tsx:91
+msgid "optional remarks over the update made"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:77
+msgid "History"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:77
+msgid "History Off"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:84
+msgid "View Updates"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:140
+msgid "View Historical Data"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:156
+msgid "Current Record"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Panels/UpdatePanel.tsx:162
+msgid "Loading ..."
+msgstr ""
+
+#: src/pages/manage/Complaints/Edit.tsx:73
+#: src/pages/manage/Complaints/Forms/LogForm.tsx:24
+msgid "Action"
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:68
+#: src/pages/manage/Complaints/List.tsx:106
+msgid "Applicant"
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:75
+msgid "Would you like to archive this complaint? Please note that this action can not be reversed."
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ComplaintPanel.tsx:76
+msgid "The complaint was successfully archived."
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/LogForm.tsx:56
+#: src/pages/manage/Complaints/Forms/ReviewForm.tsx:68
+msgid "Attachments"
+msgstr ""
+
+#: src/pages/manage/Commitments/CommitmentLineForm.tsx:62
+#: src/pages/manage/Commitments/Edit.tsx:111
+msgid "Number Of Commitments"
+msgstr ""
+
+#: src/pages/dashboard/Dashboard.tsx:9
+msgid "This page will be updated with the latest custom reports as the system is used."
+msgstr ""
+
+#: src/pages/auth/Login.tsx:68
+msgid "Password Visibility"
+msgstr ""
+
+#: src/components/container/PViewDialog.tsx:85
+msgid "View Item"
+msgstr ""
+
+#: src/components/container/PTable/PTable.tsx:85
+msgid "Are you sure you would like to archive the specified record?"
+msgstr ""
+
+#: src/components/container/PTable/PTable.tsx:88
+msgid "Your record was successfully archived."
+msgstr ""
+
+#: src/components/container/PTable/PTableAction.tsx:19
+msgid "Archive"
+msgstr ""
+
+#: src/app/utils.ts:42
+msgid "Your request was successfully processed."
+msgstr ""
+
+#: src/template/components/Cards/AuthorCard.tsx:50
+#: src/template/pages/restrictions/Restriction.tsx:84
+msgid "Introduced In"
+msgstr ""
+
+#: src/template/pages/complaints/Complaints.tsx:108
+msgid "Staff accounts are not allowed to register new complaints."
+msgstr ""
+
+#: src/pages/manage/Complaints/Forms/ComplaintForm.tsx:56
+#: src/pages/manage/Complaints/List.tsx:101
+#: src/template/pages/complaints/List.tsx:149
+msgid "Duration"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:80
+msgid "Are you a service provider facing challenges while offering services while operating in the EAC Partner States? We are here to help. Our SMS service lets you quickly and easily report any restrictions you are experiencing. It is fast, convenient, and designed with you in mind. Here is how to make the most of it."
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:89
+msgid "Describe the challenge/restriction you are facing (e.g. restriction on market entry, restriction while operating, licensing requirements, etc.)."
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:93
+msgid "Give us the date and time if possible."
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:97
+msgid "Mention the EAC partner state"
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:122
+msgid "We liaise with the relevant regulators/ministries to resolve the issue."
+msgstr ""
+
+#: src/template/pages/about/SMSHowTo.tsx:123
+msgid "Your report helps us advocate for better policies and improved trade in services."
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:50
+msgid "Please wait for the regulator review process to end."
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:53
+msgid "Please wait for the regional review process to end."
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:56
+msgid "Please wait for the council review process to end."
+msgstr ""
+
+#: src/pages/manage/Complaints/Panels/ReviewPanel.tsx:77
+msgid "Progress Update"
+msgstr ""
+
+#: src/pages/config/Sectors.tsx:49
+msgid "Edit Sector"
+msgstr ""
+
+#: src/components/input/PI18n.tsx:104
+msgid "Choose a locale"
+msgstr ""
+
+#: src/pages/config/ReportTags.tsx:72
+msgid "slug"
+msgstr ""
+
+#: src/template/pages/home/Hero.tsx:139
+msgid "The EAC Mechanism for the Removal of Restrictions on Trade in Services"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:240
+msgid "The main resolution that resulted in creating this restriction"
+msgstr ""
+
+#: src/pages/manage/Restrictions/Forms/RestrictionForm.tsx:250
+msgid "optional remarks over the restriction"
+msgstr ""

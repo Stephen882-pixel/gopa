@@ -1,0 +1,40 @@
+<!DOCTYPE html>{% load static core_template_tags %}
+<html>
+    <head>{% spaceless %}
+    {% csp_enable "style-src" "'unsafe-inline'" %}
+    {% csp_enable "img-src" "data:" "blob:" %}
+    {% endspaceless %}
+        <meta charset="UTF-8" />
+        <title>{% block title %}{{ title }}{% endblock %}</title>
+        <link rel="icon" type="image/png" href="{% static 'drf-yasg/swagger-ui-dist/favicon-32x32.png' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'drf-yasg/style.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'drf-yasg/swagger-ui-dist/swagger-ui.css' %}" />
+    </head>
+
+    <body class="swagger-body">
+        <div class="swagger-ui">
+            <div class="topbar">
+                <div class="wrapper">
+                    <div class="topbar-wrapper">
+                        <a rel="noopener noreferrer" class="link">
+                            <img height="40" src="{% static 'core/swagger/logo.svg' %}" alt="Swagger UI" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="swagger-ui"></div>
+        <a id="oauth2-redirect-url" href="{% static 'drf-yasg/swagger-ui-dist/oauth2-redirect.html' %}" class="hidden"></a>
+        <div id="django-session-auth" class="hidden">{% csrf_token %}</div>
+
+        <script id="swagger-settings" type="application/json">{{ swagger_settings | safe }}</script>
+        <script id="oauth2-config" type="application/json">{{ oauth2_config | safe }}</script>
+        <script src="{% static 'drf-yasg/swagger-ui-dist/swagger-ui-bundle.js' %}"></script>
+        <script src="{% static 'drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js' %}"></script>
+        <script src="{% static 'drf-yasg/insQ.min.js' %}"></script>
+        <script src="{% static 'drf-yasg/immutable.min.js' %}"></script>
+        <script src="{% static 'drf-yasg/swagger-ui-init.js' %}"></script>
+        <script src="{% static 'core/swagger/options.js' %}"></script>
+    </body>
+</html>

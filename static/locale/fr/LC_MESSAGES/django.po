@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-07-02 17:41+0000\n"
+"PO-Revision-Date: 2025-06-24 19:15+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: core/models.py:16
+msgid "Question"
+msgstr "Question"
+
+#: core/models.py:17
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: core/models.py:45 core/templates/core/emails/confirm_signup.html:4
+msgid "User Registration"
+msgstr "Enregistrement des utilisateurs"
+
+#: core/models.py:65 core/templates/core/emails/confirm_reset.html:4
+msgid "Password Reset"
+msgstr "Réinitialisation du mot de passe"
+
+#: core/serializers/admin.py:69
+msgid "The email specified is already in use"
+msgstr "L'e-mail spécifié est déjà utilisé"
+
+#: core/serializers/auth.py:22
+msgid "The two passwords do not match."
+msgstr "Les deux mots de passe ne correspondent pas."
+
+#: core/serializers/auth.py:26
+msgid ""
+"Make sure your password has at least 8 characters has one numeric character "
+"and has at least one non-word character."
+msgstr ""
+"Assurez-vous que votre mot de passe a au moins 8 caractères a un caractère "
+"numérique et a au moins un caractère non-mot."
+
+#: core/serializers/auth.py:49
+msgid "The email specified could not be found within the portal."
+msgstr "L'e-mail spécifié n'a pas pu être trouvé dans le portail."
+
+#: core/serializers/auth.py:51
+msgid "This account has been deactivated."
+msgstr "Ce compte a été désactivé."
+
+#: core/serializers/auth.py:69
+msgid "The username specified is already in use"
+msgstr "Le nom d'utilisateur spécifié est déjà utilisé"
+
+#: core/serializers/auth.py:82 core/serializers/auth.py:85
+#: core/serializers/auth.py:87
+msgid "The token specified is invalid"
+msgstr "Le jeton spécifié n'est pas valide"
+
+#: core/serializers/auth.py:120
+msgid "You must specify your current password to make changes on this form."
+msgstr ""
+"Vous devez spécifier votre mot de passe actuel pour apporter des "
+"modifications à ce formulaire."
+
+#: core/serializers/report.py:21
+msgid "Make sure metabase has been properly configured"
+msgstr "Assurez-vous que la métabase a été correctement configurée"
+
+#: core/serializers/report.py:24
+msgid "The index specified could not be found"
+msgstr "L'indice spécifié n'a pas pu être trouvé"
+
+#: core/templates/core/emails/confirm_reset.html:10
+msgid "Password Reset Request"
+msgstr "Demande de réinitialisation de mot de passe"
+
+#: core/templates/core/emails/confirm_reset.html:13
+msgid ""
+"A request to reset your password was issued on the EAC restrictions portal. "
+"Use the link below to reset your password."
+msgstr ""
+"Une demande de réinitialisation de votre mot de passe a été émise sur le "
+"portail des restrictions EAC. Utilisez le lien ci-dessous pour réinitialiser"
+" votre mot de passe."
+
+#: core/templates/core/emails/confirm_reset.html:14
+msgid ""
+"Please note, unless you use the link below to reset your password, your "
+"current password will not change."
+msgstr ""
+"Veuillez noter, sauf si vous utilisez le lien ci-dessous pour réinitialiser "
+"votre mot de passe, votre mot de passe actuel ne changera pas."
+
+#: core/templates/core/emails/confirm_reset.html:21
+#: core/templates/core/emails/confirm_signup.html:23
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: core/templates/core/emails/confirm_signup.html:10
+msgid "Welcome to the EAC Restrictions Portal!"
+msgstr "Bienvenue sur le portail des restrictions EAC!"
+
+#: core/templates/core/emails/confirm_signup.html:11
+msgid "Thank you for signing up!"
+msgstr "Merci de vous inscrire!"
+
+#: core/templates/core/emails/confirm_signup.html:14
+msgid ""
+"You have been invited to the EAC restrictions portal. Please confirm your "
+"registration to activate your staff account."
+msgstr ""
+"Vous avez été invité au portail des restrictions EAC. Veuillez confirmer "
+"votre inscription pour activer le compte de votre personnel."
+
+#: core/templates/core/emails/confirm_signup.html:15
+msgid "We are excited to have you join us"
+msgstr "Nous sommes ravis de vous rejoindre"
+
+#: core/templates/core/emails/confirm_signup.html:16
+msgid "Please confirm your registration to continue"
+msgstr "Veuillez confirmer votre inscription pour continuer"
+
+#: core/views/auth/auth.py:37
+msgid "The credentials supplied are invalid."
+msgstr "Les informations d'identification fournies ne sont pas valides."
+
+#: core/views/auth/auth.py:40
+msgid "Complete the registration process to use this account."
+msgstr "Terminez le processus d'enregistrement pour utiliser ce compte."
+
+#: restrictions/models.py:17
+msgid "Quantitative"
+msgstr "Quantitatif"
+
+#: restrictions/models.py:18
+msgid "Qualitative"
+msgstr "Qualitatif"
+
+#: restrictions/models.py:19
+msgid "Quantitative and Qualitative"
+msgstr "Quantitatif et qualitatif"
+
+#: restrictions/models.py:23
+msgid "De Jure"
+msgstr "De Jure"
+
+#: restrictions/models.py:24
+msgid "De Facto"
+msgstr "En fait"
+
+#: restrictions/models.py:28
+msgid "Mode 1: Cross-border trade"
+msgstr "Mode 1: Commerce transfrontalier"
+
+#: restrictions/models.py:29
+msgid "Mode 2: Consumption abroad"
+msgstr "Mode 2: consommation à l'étranger"
+
+#: restrictions/models.py:30
+msgid "Mode 3: Commercial presence"
+msgstr "Mode 3: Présence commerciale"
+
+#: restrictions/models.py:31
+msgid "Mode 4: Movement of natural persons"
+msgstr "Mode 4: Mouvement des personnes naturelles"
+
+#: restrictions/models.py:35
+msgid "Yes"
+msgstr "Oui"
+
+#: restrictions/models.py:36
+msgid "No"
+msgstr "Non"
+
+#: restrictions/models.py:40
+msgid "Non-Discriminatory"
+msgstr "Non discriminatoire"
+
+#: restrictions/models.py:41
+msgid "Discriminatory"
+msgstr "Discriminatoire"
+
+#: restrictions/models.py:45
+msgid "Law"
+msgstr "Loi"
+
+#: restrictions/models.py:46
+msgid "Decision"
+msgstr "Décision"
+
+#: restrictions/models.py:47
+msgid "Administrative Practice"
+msgstr "Pratique administrative"
+
+#: restrictions/models.py:48
+msgid "Other"
+msgstr "Autre"
+
+#: restrictions/models.py:53
+msgid "New"
+msgstr "Nouveau"
+
+#: restrictions/models.py:54
+msgid "Update Status"
+msgstr "Mettre à jour l'état"
+
+#: restrictions/models.py:55 restrictions/models.py:77
+msgid "Review"
+msgstr "Revoir"
+
+#: restrictions/models.py:56
+msgid "Regional Review"
+msgstr "Revue régionale"
+
+#: restrictions/models.py:57
+#, fuzzy
+#| msgid "Review"
+msgid "Council Review"
+msgstr "Examen du conseil"
+
+#: restrictions/models.py:58
+msgid "Resolved"
+msgstr "Résolu"
+
+#: restrictions/models.py:59
+msgid "Rejected"
+msgstr "Rejeté"
+
+#: restrictions/models.py:63
+msgid "Neither Removed nor Amended"
+msgstr "Ni supprimé ni modifié"
+
+#: restrictions/models.py:64
+msgid "Newly Introduced"
+msgstr "Nouvellement introduit"
+
+#: restrictions/models.py:65
+msgid "Major Amendment"
+msgstr "Amendement majeur"
+
+#: restrictions/models.py:66
+msgid "Minor Amendment"
+msgstr "Amendement mineur"
+
+#: restrictions/models.py:67
+msgid "Completely Removed"
+msgstr "Complètement supprimé"
+
+#: restrictions/models.py:71
+msgid "Restriction on Market Entry"
+msgstr "Restriction sur l'entrée du marché"
+
+#: restrictions/models.py:72
+msgid "Restriction while Operating"
+msgstr "Restriction pendant le fonctionnement"
+
+#: restrictions/models.py:76
+msgid "Draft"
+msgstr "Brouillon"
+
+#: restrictions/models.py:78
+msgid "Active"
+msgstr "Actif"
+
+#: restrictions/serializers/admin.py:143
+#, python-format
+msgid "Make sure to include the following translations: %s"
+msgstr "Assurez-vous d'inclure les traductions suivantes:% S"
+
+#: restrictions/serializers/admin.py:154
+msgid "This record has been archived and can not be modified"
+msgstr "Ce dossier a été archivé et ne peut pas être modifié"
+
+#: restrictions/serializers/admin.py:157
+msgid "Specify the reason for updating this restriction"
+msgstr "Spécifiez la raison de la mise à jour de cette restriction"
+
+#: restrictions/serializers/admin.py:247
+msgid ""
+"Please note that staff accounts are not allowed to register new complaints."
+msgstr ""
+"Veuillez noter que les comptes du personnel ne sont pas autorisés à "
+"enregistrer de nouvelles plaintes."
+
+#: restrictions/serializers/admin.py:320
+msgid "The status supplied is invalid"
+msgstr "Le statut fourni n'est pas valide"
+
+#: restrictions/serializers/admin.py:322
+msgid "The application can not be moved to the specified status"
+msgstr "L'application ne peut pas être déplacée au statut spécifié"
+
+#: restrictions/serializers/admin.py:325
+msgid "Specify the date the complaint was resolved"
+msgstr "Spécifiez la date à laquelle la plainte a été résolue"
+
+#: restrictions/serializers/admin.py:328
+msgid "The date a complaint is resolved can not be in the past."
+msgstr ""
+"La date à laquelle une plainte est résolue ne peut pas être dans le passé."
+
+#: restrictions/views/admin/complaints.py:147
+msgid "One can not delete this record."
+msgstr "On ne peut pas supprimer ce record."
+
+#: restrictions/views/admin/complaints.py:149
+msgid "One can only delete rejected complaints."
+msgstr "On ne peut supprimer que les plaintes rejetées."
+
+#: restrictions/views/admin/complaints.py:152
+msgid "One can only delete their own complaints."
+msgstr "On ne peut que supprimer ses propres plaintes."
+
+#: restrictions/views/admin/complaints.py:154
+msgid "One can only delete new complaints."
+msgstr "On ne peut supprimer que de nouvelles plaintes."
+
+#: spa/templates/spa/react_base.html:18
+msgid "You need to enable JavaScript to run this app"
+msgstr "Vous devez permettre à JavaScript d'exécuter cette application"
+
+#~ msgid "Unresolved"
+#~ msgstr "Non résolu"
+
+#~ msgid "One can only delete unresolved complaints."
+#~ msgstr "On ne peut supprimer que des plaintes non résolues."

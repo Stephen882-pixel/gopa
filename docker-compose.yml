@@ -1,0 +1,75 @@
+services:
+
+  gopa_pg_17:
+    container_name: gopa_pg_17
+    image: postgres:17-alpine
+    healthcheck:
+      test: pg_isready
+      interval: 10s
+      retries: 3
+      start_period: 10s
+      timeout: 5s
+    env_file:
+      - .env
+    volumes:
+      - ./volumes/pg/data:/var/lib/postgresql/data
+      - ./volumes/pg/backup:/opt/backup
+
+  gopa_redis:
+    container_name: gopa_redis
+    image: redis:alpine
+    healthcheck:
+      test: redis-cli ping
+      interval: 10s
+      retries: 3
+      start_period: 10s
+      timeout: 5s
+
+  gopa_metabase:
+    container_name: gopa_metabase
+    image: metabase/metabase
+    depends_on:
+      gopa_pg_17:
+        condition: service_healthy
+    healthcheck:
+      test: curl -f http://localhost:3000
+    ports:
+      - 3095:3000
+    env_file:
+      - .env
+
+  gopa_app:
+    container_name: gopa_app
+    build:
+      context: ./
+    depends_on:
+      gopa_pg_17:
+        condition: service_healthy
+      gopa_redis:
+        condition: service_healthy
+    healthcheck:
+      test: curl -f http://localhost:3090
+      interval: 10s
+      retries: 5
+      start_period: 10s
+      timeout: 5s
+    env_file:
+      - .env
+    volumes:
+      - ./volumes/django/media:/opt/app/static/media
+      - ./volumes/django/cache:/opt/app/static/cache
+
+  gopa_nginx:
+    container_name: gopa_nginx
+    image: nginx:alpine
+    depends_on:
+      gopa_app:
+        condition: service_healthy
+    healthcheck:
+      test: curl -f http://localhost
+    ports:
+      - 3090:80
+    volumes:
+      - ./volumes/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./volumes/django/media:/opt/media
+      - ./volumes/django/cache:/opt/static
