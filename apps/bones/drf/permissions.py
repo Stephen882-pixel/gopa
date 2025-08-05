@@ -78,3 +78,65 @@ class HasPermissions(BasePermission):
             elif not is_or and not has_perm:
                 return False
         return True if 0 == i else not is_or
+
+class CMSPermission(CRUDPermission):
+
+    syntax = "core.%s_cmspage"
+
+class CMSContentManager(BasePermission):
+
+    def has_permission(self,req: Request, view:APIView) -> bool:
+        if not req.user or not req.user.is_authenticated:
+            return False
+
+        if req.method == 'GET':
+            return True
+
+        if req.method in ['POST','PUT','PATCH']:
+            return (req.user.is_staff or
+                    req.user.has_perm("core.add_cmspage") or
+                    req.user.has_perm("core.change_cmspage"))
+
+        # only super use will be able to delete content
+        if req.method == 'DELETE':
+            return req.user.is_superuser
+
+        return False
+
+class CMSEditor(BasePermission):
+    def has_permission(self,req:Request,view:APIView) -> bool:
+        if not req.user or not req.user.is_authenticated:
+            return False
+
+        if req.method == 'GET':
+            return True
+
+        if req.method in ['PUT','PATCH']:
+            return (req.user.is_staff or
+                    req.user.has_perm("core.change_cmspage"))
+
+        if req.method == 'POST':
+            return (req.user.is_superuser or
+                    req.user.has_perm("core.add_cmspage"))
+
+        if req.method == 'DELETE':
+            return req.user.is_superuser
+        return False
+
+class CMSPublisher(BasePermission):
+    def has_permission(self,req:Request, view:APIView) -> bool:
+        if not req.user or  not req.user.is_authenticated:
+            return False
+
+        if req.method in ['PUT','PATCH','POST']:
+            return (req.user.is_staff or
+                    req.user.has_perm("core.change_cmspage") or
+                    req.user.has_perm("core.add_cmspage"))
+        return True
+
+
+class CMSViewOnly(BasePermission):
+    def has_permission(self, req:Request, view:APIView) -> bool:
+        if req.method == 'GET':
+            return req.user and req.user.is_authenticated
+        return False
