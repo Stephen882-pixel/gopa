@@ -119,4 +119,3 @@ class Command(BaseCommand):
                 self.style.SUCCESS('CMS user groups created successfully')
             )
 
-            # Usage Instructions

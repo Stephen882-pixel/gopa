@@ -1,5 +1,7 @@
 from django.template.defaultfilters import title
 from django.views.decorators.http import last_modified
+from django.utils.decorators import method_decorator
+from apps.bones import swagger as sg
 from rest_framework import viewsets,status
 from rest_framework.decorators import action, permission_classes
 from rest_framework.response import Response
@@ -20,7 +22,15 @@ from apps.bones.drf.permissions import (
     CMSViewOnly
 )
 
-
+@method_decorator(
+    name="create",
+    decorator=sg.decorator(
+        tag="cms",
+        schema=CMSPageSerializer,
+        status=201,
+        operation_summary="add a new user group",
+    ),
+)
 class CMSPageViewSet(viewsets.ModelViewSet):
     queryset = CMSPage.objects.all()
     serializer_class = CMSPageSerializer
@@ -99,103 +109,103 @@ class CMSPageViewSet(viewsets.ModelViewSet):
                 'message':f'page "{page.title}" is already published.'
             },status=status.HTTP_400_BAD_REQUEST)
 
-        @action(detail=True,methods=['post'])
-        def unpublish(self,request,slug=None):
-            page = self.get_object()
+    @action(detail=True,methods=['post'])
+    def unpublish(self,request,slug=None):
+        page = self.get_object()
 
-            if page.published:
-                page.published = False
-                page.last_modified_by = request.user
-                page.save()
+        if page.published:
+            page.published = False
+            page.last_modified_by = request.user
+            page.save()
 
-                return Response({
-                    'status':'unpublished',
-                    'message':f'page "{page.title}" has been unpublished '
-                })
-            else:
-                return Response({
-                    'status':'already unpublished',
-                    'message':f' page "{page.title}" is already unpublished. '
-                },status=status.HTTP_400_BAD_REQUEST)
-
-        @action(detail=False,methods=['get'])
-        def my_pages(self,request):
-            queryset = self.get_queryset().filter(author=request.user)
-
-
-            search = request.query_params.get('search',None)
-            if search:
-                queryset = queryset.filter(
-                    Q(title__icontain=search) |
-                    Q(body__icontains=search) |
-                    Q(slug__icontain=search)
-                )
-
-            published_filter = request.query_params.get('published',None)
-            if published_filter is not None:
-                queryset = queryset.filter(published=published_filter.lower() == 'true')
-            page = self.paginate_queryset(queryset)
-            if page is not None:
-                serializer = CMSPageListSerializer(page,many=True)
-                return self.get_paginated_response(serializer.data)
-
-            serializer = CMSPageListSerializer(queryset,many=True)
-            return Response(serializer.data)
-
-        @action(detail=False,methods=['get'])
-        def drafts(self,request):
-            queryset = self.get_queryset().filter(published=False)
-
-            page = self.paginate_queryset().filter(published=True)
-            if page is not None:
-                serializer = CMSPageListSerializer(page,many=True)
-                return self.get_paginated_response(serializer.data)
-            serializer = CMSPageListSerializer(queryset,many=True)
-            return Response(serializer.data)
-
-
-        @action(detail=False,methods=['get'],permission_classes = [])
-        def public(self,request):
-            queryset = self.get_queryset()
-
-            search = request.query_params.get('search',None)
-            if search:
-                queryset = queryset.filter(
-                    Q(title__icontains=search) |
-                    Q(body__icontains=search)
-                )
-            page = self.paginat.queryset(queryset)
-            if page is not  None:
-                serializer = CMSPagePublicSerializer(page,many=True)
-                return Response(serializer.data)
-
-        @action(detail=False,methods=['get'])
-        def stats(self,request):
-            if request.user.is_superuser or request.user.has_perm('core.manage.all_cmspages'):
-                total_pages = CMSPage.objects.count()
-                published_pages = CMSPage.objects.filter(published=True).count()
-                draft_pages = CMSPage.objects.filter(published=False).count()
-                user_pages = CMSPage.objects.filter(author=request.user).count()
-            else:
-                user_queryset = CMSPage.objects.filter(author=request.user)
-                total_pages = user_queryset.count()
-                published_pages = user_queryset.filter(published=True).count()
-                draft_pages = user_queryset.filter(published=False).count()
-                user_pages = total_pages
             return Response({
-                'total_pages':total_pages,
-                'published_pages':published_pages,
-                'draft_pages':draft_pages,
-                'user_pages':user_pages,
-                'user_permissions':{
-                    'can_create':request.user.has_perm('core.add.cmspage') or request.user.is_staff,
-                    'can_publish':(request.user.has_perm('core.publish_cmspage') or
-                                   request.user.is_staff or request.user.is_superuser),
-                    'can_manage_all':(request.user.has_perm('core.manage_all_cmspages') or
-                                      request.user.is_superuser),
-                    'can_delete':request.user.is_superuser
-                }
+                'status':'unpublished',
+                'message':f'page "{page.title}" has been unpublished '
             })
+        else:
+            return Response({
+                'status':'already unpublished',
+                'message':f' page "{page.title}" is already unpublished. '
+            },status=status.HTTP_400_BAD_REQUEST)
+
+    @action(detail=False,methods=['get'])
+    def my_pages(self,request):
+        queryset = self.get_queryset().filter(author=request.user)
+
+
+        search = request.query_params.get('search',None)
+        if search:
+            queryset = queryset.filter(
+                Q(title__icontain=search) |
+                Q(body__icontains=search) |
+                Q(slug__icontain=search)
+            )
+
+        published_filter = request.query_params.get('published',None)
+        if published_filter is not None:
+            queryset = queryset.filter(published=published_filter.lower() == 'true')
+        page = self.paginate_queryset(queryset)
+        if page is not None:
+            serializer = CMSPageListSerializer(page,many=True)
+            return self.get_paginated_response(serializer.data)
+
+        serializer = CMSPageListSerializer(queryset,many=True)
+        return Response(serializer.data)
+
+    @action(detail=False,methods=['get'])
+    def drafts(self,request):
+        queryset = self.get_queryset().filter(published=False)
+
+        page = self.paginate_queryset().filter(published=True)
+        if page is not None:
+            serializer = CMSPageListSerializer(page,many=True)
+            return self.get_paginated_response(serializer.data)
+        serializer = CMSPageListSerializer(queryset,many=True)
+        return Response(serializer.data)
+
+
+    @action(detail=False,methods=['get'],permission_classes = [])
+    def public(self,request):
+        queryset = self.get_queryset()
+
+        search = request.query_params.get('search',None)
+        if search:
+            queryset = queryset.filter(
+                Q(title__icontains=search) |
+                Q(body__icontains=search)
+            )
+        page = self.paginate.queryset(queryset)
+        if page is not  None:
+            serializer = CMSPagePublicSerializer(page,many=True)
+            return Response(serializer.data)
+
+    @action(detail=False,methods=['get'])
+    def stats(self,request):
+        if request.user.is_superuser or request.user.has_perm('core.manage.all_cmspages'):
+            total_pages = CMSPage.objects.count()
+            published_pages = CMSPage.objects.filter(published=True).count()
+            draft_pages = CMSPage.objects.filter(published=False).count()
+            user_pages = CMSPage.objects.filter(author=request.user).count()
+        else:
+            user_queryset = CMSPage.objects.filter(author=request.user)
+            total_pages = user_queryset.count()
+            published_pages = user_queryset.filter(published=True).count()
+            draft_pages = user_queryset.filter(published=False).count()
+            user_pages = total_pages
+        return Response({
+            'total_pages':total_pages,
+            'published_pages':published_pages,
+            'draft_pages':draft_pages,
+            'user_pages':user_pages,
+            'user_permissions':{
+                'can_create':request.user.has_perm('core.add.cmspage') or request.user.is_staff,
+                'can_publish':(request.user.has_perm('core.publish_cmspage') or
+                               request.user.is_staff or request.user.is_superuser),
+                'can_manage_all':(request.user.has_perm('core.manage_all_cmspages') or
+                                  request.user.is_superuser),
+                'can_delete':request.user.is_superuser
+            }
+        })
 
 
 

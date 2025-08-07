@@ -28,18 +28,15 @@ class DTCountrySerializer(DTSerializer):
 
 
 class CMSPageSerializer(serializers.ModelSerializer):
-    author_username = serializers.CharField(source='author.username',read_only=True)
-    last_modified_by_username = serializers.CharField(source='last_modified_by.username',read_only=True)
 
     class Meta:
         model = CMSPage
         fields = [
             'id','slug','title','body','published','author',
-            'author.username','last_modified_by','last_modified_by_username',
-            'created_at','updated_at','published_at'
+            'last_modified_by','created_at','updated_at','published_at'
         ]
         read_only_fields = [
-            'author','last_modified_by','created_at','updated_at','published_at'
+            'author','last_modified_by','slug','created_at','updated_at','published_at'
         ]
 
     def validate_slug(self,value):
@@ -73,6 +70,7 @@ class CMSPageSerializer(serializers.ModelSerializer):
         request = self.context.get('request')
         if request and request.user.is_authenticated:
             validated_data['published_at'] = timezone.now()
+        return super().update(instance,validated_data)
 
 class CMSPageListSerializer(serializers.ModelSerializer):
     author_username = serializers.CharField(source='author.username',read_only=True)
